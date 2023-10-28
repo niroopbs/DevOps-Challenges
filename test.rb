@@ -4,18 +4,21 @@ server = TCPServer.new('0.0.0.0', 80)
 
 loop do
   client = server.accept
-  request = client.readpartial(2048)
+  request = client.gets
 
-  method, path, version = request.lines[0].split
+  if request
+    method, path, version = request.split
 
-  puts "#{method} #{path} #{version}"
+    puts "#{method} #{path} #{version}"
 
-  if path == "/helathcheck"
-    response = "HTTP/1.1 200 OK\r\nContent-Length: 13\r\n\r\nOK!"
-  else
-    response = "HTTP/1.1 200 OK\r\nContent-Length: 13\r\n\r\nWell, hello there!"
+    if path == "/healthcheck"
+      response = "HTTP/1.1 200 OK\r\nContent-Length: 5\r\n\r\nOK!"
+    else
+      response = "HTTP/1.1 200 OK\r\nContent-Length: 24\r\n\r\nWell, hello there!"
+    end
+
+    client.print(response)
   end
 
-  client.write(response)
   client.close
 end
