@@ -10,11 +10,11 @@ loop do
 
   puts "#{method} #{path} #{version}"
 
-  if path == "/helathcheck"
-    response = "HTTP/1.1 200 OK\r\nContent-Length: 13\r\n\r\nOK!"
-  else
-    response = "HTTP/1.1 200 OK\r\nContent-Length: 13\r\n\r\nWell, hello there!"
-  end
+ if path == "/healthcheck"
+  response = "HTTP/1.1 200 OK\r\nContent-Length: 2\r\n\r\nOK"
+else
+  response = "HTTP/1.1 200 OK\r\nContent-Length: 11\r\n\r\nHello world"
+end
 
   client.write(response)
   client.close
