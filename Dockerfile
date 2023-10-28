@@ -11,4 +11,4 @@ EXPOSE 80
 
 
 #CMD ["ruby", "http_server.rb"]
-CMD ["ruby", "test.rb"]
+CMD ["ruby", "http_server.rb"]
