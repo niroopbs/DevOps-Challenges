@@ -67,7 +67,7 @@ All other paths return "Well, hello there!"
 
 
 ## DNS name with without adding healthcheck getting the following response. 
-
+<img width="464" alt="image" src="https://github.com/niroopbs/DevOps-Challenges/assets/50316430/720aed80-e90b-4f2f-a4ad-b7e281d0facd">
 
 
 
