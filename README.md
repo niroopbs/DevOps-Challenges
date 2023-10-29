@@ -76,6 +76,6 @@ I have successfully completed the take-home challenge, which involved designing 
 
 "Please inform me if I overlooked anything in this regard. I am eager to learn and put it into practice. Thank you." 😀
 
-*************************************END**************************************************
+                                            
 
 
