@@ -42,4 +42,4 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: 22  # Modify the port if needed
           script: |
-            microk8s kubectl get nodes
+            sudo microk8s kubectl rollout restart deployment
