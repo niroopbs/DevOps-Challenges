@@ -20,18 +20,18 @@ niroopbs/DevOps-Challenges: DevOps Challenges (github.com)
 ## Pipeline design 
 Github actions allows developers to create workflow that automate the building, testing and deployment of their code. In order to create a GitHub Actions workflow, I have defined the workflow as a YAML file in a specific folder structure. The folder path for GitHub Actions workflows is .github/workflows/, and each workflow is defined in a separate YAML file with a descriptive name
 
-
-
+<img width="390" alt="image" src="https://github.com/niroopbs/DevOps-Challenges/assets/50316430/a986a26f-a66a-4b34-9bab-642c2d241c88">
 
 ## Deploy 
 Created a EC2 instance in AWS environment 
  Details  : UBUNTU, T3.medium, 100 GB
+ 
+<img width="472" alt="image" src="https://github.com/niroopbs/DevOps-Challenges/assets/50316430/de7fc33a-0a8a-4a6c-a190-a42ca2fff3f2">
 
 Created the DockerHub repository and pushed the build images to docker hub
 niroopbs/devopschallenge general | Docker Hub
 
-
-
+<img width="472" alt="image" src="https://github.com/niroopbs/DevOps-Challenges/assets/50316430/7f72083c-99f4-4726-94d0-1201e463fcb1">
 
 ## Connected via ssh and ran the following commands to install microk8’s
 
@@ -57,7 +57,6 @@ Reliability-
 Observability.-
 
 
-
 ## Output :-
 
 /healthcheck path returns "OK"
@@ -65,8 +64,10 @@ All other paths return "Well, hello there!"
 
 ## DNS name with adding “healthcheck” getting the following response. 
 
+<img width="464" alt="image" src="https://github.com/niroopbs/DevOps-Challenges/assets/50316430/19e2c043-6cf7-4c77-8de7-bf7f42429c13">
 
 ## DNS name with without adding healthcheck getting the following response. 
+
 <img width="464" alt="image" src="https://github.com/niroopbs/DevOps-Challenges/assets/50316430/720aed80-e90b-4f2f-a4ad-b7e281d0facd">
 
 
