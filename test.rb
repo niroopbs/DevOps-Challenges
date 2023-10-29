@@ -13,7 +13,7 @@ loop do
  if path == "/healthcheck"
   response = "HTTP/1.1 200 OK\r\nContent-Length: 2\r\n\r\nOK"
 else
-  response = "HTTP/1.1 200 OK\r\nContent-Length: 11\r\n\r\nWelcome world"
+  response = "HTTP/1.1 200 OK\r\nContent-Length: 11\r\n\r\nHello world"
 end
 
   client.write(response)
